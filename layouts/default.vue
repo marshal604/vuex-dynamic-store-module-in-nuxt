@@ -63,6 +63,8 @@
 </template>
 
 <script>
+import * as inspireStoreModule from '~/store-modules/inspire'
+
 export default {
   name: 'DefaultLayout',
   data() {
@@ -87,6 +89,12 @@ export default {
       rightDrawer: false,
       title: 'Vuetify.js',
     }
+  },
+  beforeCreate() {
+    this.$registerStore({
+      path: 'inspire',
+      module: inspireStoreModule,
+    })
   },
 }
 </script>
