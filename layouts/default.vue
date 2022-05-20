@@ -83,6 +83,11 @@ export default {
           title: 'Inspire',
           to: '/inspire',
         },
+        {
+          icon: 'mdi-open-in-new',
+          title: 'Bravo',
+          to: '/bravo',
+        },
       ],
       miniVariant: false,
       right: true,

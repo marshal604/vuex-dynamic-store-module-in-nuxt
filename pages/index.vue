@@ -85,6 +85,11 @@ export default {
   name: 'IndexPage',
   mounted() {
     this.$store.dispatch('inspire/setTitle', 'Hubert')
+    try {
+      this.$store.dispatch('bravo/setTitle', 'Client Rendering')
+    } catch {
+      //
+    }
   },
 }
 </script>
