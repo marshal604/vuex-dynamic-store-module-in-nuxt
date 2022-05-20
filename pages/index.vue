@@ -83,5 +83,8 @@
 <script>
 export default {
   name: 'IndexPage',
+  mounted() {
+    this.$store.dispatch('inspire/setTitle', 'Hubert')
+  },
 }
 </script>

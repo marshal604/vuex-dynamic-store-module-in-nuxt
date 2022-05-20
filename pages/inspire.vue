@@ -1,6 +1,8 @@
 <template>
   <v-row>
     <v-col class="text-center">
+      <h1>{{ title }}</h1>
+      <br />
       <img src="/v.png" alt="Vuetify.js" class="mb-5" />
       <blockquote class="blockquote">
         &#8220;First, solve the problem. Then, write the code.&#8221;
@@ -15,7 +17,14 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'InspirePage',
+  computed: {
+    ...mapGetters({
+      title: 'inspire/title',
+    }),
+  },
 }
 </script>
