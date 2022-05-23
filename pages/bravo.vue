@@ -29,7 +29,7 @@ export default {
   },
   beforeCreate() {
     this.$registerStore({
-      pathList: ['bravo'],
+      namespaces: ['bravo'],
       module: bravoStoreModule,
     })
   },

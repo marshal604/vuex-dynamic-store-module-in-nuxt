@@ -102,7 +102,7 @@ export default {
   },
   beforeCreate() {
     this.$registerStore({
-      pathList: ['inspire'],
+      namespaces: ['inspire'],
       module: inspireStoreModule,
     })
   },

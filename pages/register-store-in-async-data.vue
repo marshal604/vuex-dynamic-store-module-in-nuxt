@@ -36,11 +36,11 @@ export default {
   name: 'RegisterStoreInAsyncData',
   async asyncData({ app, store }) {
     app.$registerStore({
-      pathList: ['register-store-in-async-data'],
+      namespaces: ['register-store-in-async-data'],
       module: RegisterStoreInAsyncData,
     })
     app.$registerStore({
-      pathList: ['register-store-in-async-data', 'nested'],
+      namespaces: ['register-store-in-async-data', 'nested'],
       module: RegisterStoreInAsyncDataNested,
     })
 
@@ -63,11 +63,11 @@ export default {
   },
   beforeCreate() {
     this.$registerStore({
-      pathList: ['register-store-in-async-data'],
+      namespaces: ['register-store-in-async-data'],
       module: RegisterStoreInAsyncData,
     })
     this.$registerStore({
-      pathList: ['register-store-in-async-data', 'nested'],
+      namespaces: ['register-store-in-async-data', 'nested'],
       module: RegisterStoreInAsyncDataNested,
     })
   },
