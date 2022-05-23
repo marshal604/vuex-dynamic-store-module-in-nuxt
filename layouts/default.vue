@@ -88,6 +88,11 @@ export default {
           title: 'Bravo',
           to: '/bravo',
         },
+        {
+          icon: 'mdi-filter-variant',
+          title: 'register-store-in-async-data',
+          to: '/register-store-in-async-data',
+        },
       ],
       miniVariant: false,
       right: true,
