@@ -93,6 +93,11 @@ export default {
           title: 'register-store-in-async-data',
           to: '/register-store-in-async-data',
         },
+        {
+          icon: 'mdi-people',
+          title: 'empty-parent',
+          to: '/empty-parent',
+        },
       ],
       miniVariant: false,
       right: true,
