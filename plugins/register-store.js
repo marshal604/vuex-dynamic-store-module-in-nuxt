@@ -1,11 +1,12 @@
+import _ from 'lodash'
+
 const registerStore =
   (store) =>
   ({ path, module }) => {
-    if (store.hasModule(path)) return
-    const preserveState = store.state[path]
     const modulePathList = path.split('/')
-    const moduleName =
-      modulePathList.length === 1 ? modulePathList[0] : modulePathList
+    if (store.hasModule(modulePathList)) return
+    const preserveState = _.get(store.state, modulePathList.join('.'))
+    const moduleName = modulePathList.length === 1 ? path : modulePathList
     store.registerModule(
       moduleName,
       { namespaced: true, ...module },
